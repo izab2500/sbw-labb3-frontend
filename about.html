@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Om uppgiften | Labb 3</title>
+</head>
+
+<body>
+  <header>
+    <div id="icons-parent" class="mobile-icons-container">
+      <button id="hamburger" type="button">☰</button>
+      <button id="close" class="icon-hidden" type="button">X</button>
+    </div>
+    <div class="logo">
+      <div class="rectangle">arbeten</div>
+    </div>
+    <nav class="nav-hidden">
+      <ul>
+        <li><a href="./index.html">dina arbeten</a></li>
+        <li><a href="./add.html">lägg till arbete</a></li>
+        <li><a class="active-link" href="./about.html">om uppgiften</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="about-main">
+    <h1>ℹ️ Om webbplatsen</h1>
+    <section>
+      <h2>📄 Syfte</h2>
+      <p>
+        Denna webbapplikation är skapad för att hantera arbetslivserfarenheter.
+        Användaren kan skapa, läsa, uppdatera och radera information via ett API.
+      </p>
+      <p>
+        Syftet med projektet är att visa hur en webbplats kan byggas med
+        frontend, backend och databas.
+      </p>
+    </section>
+
+    <section>
+      <h2>🛠️ Tekniker</h2>
+      <ul>
+        <li>Frontend: HTML, CSS och JavaScript</li>
+        <li>Backend: Node.js med Express</li>
+        <li>Databas: MongoDB och Mongoose</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🗄️ Databas</h2>
+      <p>
+        Webbapplikationen använder en MongoDB-databas och Mongoose för att lagra arbetslivserfarenheter.
+        Data lagras i en "collection" som innehåller information om företagsnamn, jobbtitel, plats och beskrivning av
+        arbetsuppgift.
+      </p>
+      <p>
+        Kommunikation med databasen sker via ett REST-API som hanterar CRUD-operationer.
+      </p>
+    </section>
+
+    <section>
+      <h2>💡 Slutsatser</h2>
+      <p>
+        Under arbetet med denna uppgift har jag fått en bättre förståelse för hur olika delar
+        i en webbapplikation hänger ihop, speciellt kommunikationen mellan frontend och backend.
+      </p>
+      <p>
+        Jag har även lärt mig hur man skapar och arbetar med API:er, testar dem med "Thunder client" hanterar
+        formulärdata och att data valideras både på klient- och serversidan.
+      </p>
+      <p>
+        En viktig insikt är tydlig struktur och kod som är lätt att underhålla
+        samt hur viktigt det är med bra felhantering och validering
+        för att man ska får infromation om datakommunikationen.
+      </p>
+      <p>
+        Står valet mellan MySQL och MongoDB med Mongoose är det sistnämnda att föredra
+        för projekt som inte kräver avancerade relationer mellan datan.
+        Det går snabbare att konfigurerar och det är enklare att arbeta med.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>skapad av:</p>
+    <address><a href="mailto:ziba2500@student.miun.se">ziba2500@student.miun.se</a></address>
+  </footer>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
